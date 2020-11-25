@@ -1,0 +1,39 @@
+{
+  "name": "insomnia-export-parser",
+  "version": "1.0.0",
+  "description": "Node JS program to parse a Workspace exported by Insomnia into a markdown API documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src/*.js",
+    "lint:fix": "npx eslint ./src/**.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quick-API/insomnia-export-parser.git"
+  },
+  "keywords": [
+    "insomnia",
+    "parser",
+    "api",
+    "documentation",
+    "markdown"
+  ],
+  "author": "Julien SEIXAS (Zyr0)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Quick-API/insomnia-export-parser/issues"
+  },
+  "homepage": "https://github.com/Quick-API/insomnia-export-parser#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0"
+  }
+}
