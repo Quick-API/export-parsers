@@ -276,4 +276,5 @@ dist
 
 # Doesn't want to publish data
 Insomnia_*.json
-
+data-parsed.json
+api-doc.md
