@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint src/*.js",
-    "lint:fix": "npx eslint ./src/**.js --fix"
+    "lint:fix": "npx eslint ./src/**.js --fix",
+    "postman-parser": "node ./src/postman_collection_parser_from_public_link_file.js",
+    "insomnia-parser": "node ./src/insomnia_export_parser.js",
+    "markdown-generator": "node ./src/data_to_markdown.js"
   },
   "repository": {
     "type": "git",
