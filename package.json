@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Quick-API/insomnia-export-parser.git"
   },
+  "type": "module",
   "keywords": [
     "insomnia",
     "parser",
