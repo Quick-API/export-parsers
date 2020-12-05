@@ -45,7 +45,7 @@ exportData.forEach((element) => {
       workspace = element.name;
       break;
     case 'environment':
-      endpoint = element.data.endpoint;
+      endpoint = element.data.endpoint || '';
   }
 });
 
