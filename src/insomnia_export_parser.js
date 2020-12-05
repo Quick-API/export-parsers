@@ -65,7 +65,7 @@ requests.forEach((request, index) => {
     entity: request.parentId.includes('fld') ? folders[request.parentId] : 'Unclassified',
     name: request.name,
     description: request.description,
-    url: endpoint + request.url.replace('{{ endpoint }}', ''), // TODO: Rename it globally URI
+    url: endpoint + request.url.replace(/{{ .*endpoint.* }}/gm, ''), // TODO: Rename it globally URI
     authenticationRequired: request.authentication !== {},
     method: request.method,
     header: request.headers, // TODO: Rename it headers because it could be multiple headers
