@@ -66,7 +66,7 @@ requests.forEach((request, index) => {
     name: request.name,
     description: request.description,
     url: endpoint + request.url.replace(/{{ .*endpoint.* }}/gm, ''), // TODO: Rename it globally URI
-    authenticationRequired: request.authentication !== {},
+    authenticationRequired: request.authentication !== undefined && Object.entries(request.authentication).length !== 0,
     method: request.method,
     header: request.headers, // TODO: Rename it headers because it could be multiple headers
     body: newBody !== [] ? newBody : 'untitled',
