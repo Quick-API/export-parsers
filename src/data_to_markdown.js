@@ -35,7 +35,7 @@ for (const entity in data) {
     output += '\n';
 
     output += data[entity][request].description != ''
-      ? `> ${data[entity][request].description}\n`  // TODO: Add a point when there isn't
+      ? `> ${data[entity][request].description.replace(/\n/g, '\n> ')}\n`  // TODO: Add a point when there isn't .replace(/\\n/g, `\n> `)
       : '> Description unspecified.\n';
     output += '\n';
 
