@@ -41,8 +41,7 @@ for (const entity in data) {
 
     output += `**URI** : \`${data[entity][request].url}\`\n\n`; // TODO: Replace endpoint to a "global" variable
     output += `**Authentication required** : \`${data[entity][request].authenticationRequired}\`\n\n`;
-    output += `**Method** : \`${data[entity][request].method}\`\n\n`;
-    output += '\n\n\n';
+    output += `**Method** : \`${data[entity][request].method}\`\n\n\n`;
 
     output += '#### Headers\n';
     if (data[entity][request].header.length > 0) {
