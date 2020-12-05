@@ -49,7 +49,7 @@ for (const entity in data) {
       output += '| Key | Expected value | Required | Description |\n';
       output += '| --- | --- | --- | --- |\n';
       for (const index in data[entity][request].header) {
-        output += `| ${data[entity][request].header[index].name} | ${data[entity][request].header[index].value} | Unspecified | ${data[entity][request].header[index].description} |\n`;
+        output += `| ${data[entity][request].header[index].name} | ${data[entity][request].header[index].value} | ${data[entity][request].header[index].required || 'Unspecified'} | ${data[entity][request].header[index].description} |\n`;
       }
     } else {
       output += 'No headers specified.\n';
