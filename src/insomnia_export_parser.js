@@ -23,7 +23,8 @@ exportData.forEach((element) => {
         elementHeaders.push({ // TODO : add more auth methods support
           name: 'Authorization',
           value: `${element.authentication.type} TOKEN`,
-          description: '',
+          required: '`true`',
+          description: 'Allow you to prove that you have the authorization to access to this route',
         });
       }
 
