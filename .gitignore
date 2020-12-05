@@ -275,6 +275,6 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/node,yarn,jetbrains+all,webstorm+all
 
 # Doesn't want to publish data
-Insomnia_*.json
+*Insomnia_*.json
 data-parsed.json
 api-doc.md
